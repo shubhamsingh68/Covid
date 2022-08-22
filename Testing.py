@@ -14,5 +14,7 @@ driver.find_element(By.XPATH, "//h3[text()='Cygnet Infotech: Technology that mov
 expected_title = "Technology that moves business – Cygnet Infotech"
 if driver.title == expected_title:
     print("Equal")
+    driver.quit()
 else:
     driver.quit()
+
